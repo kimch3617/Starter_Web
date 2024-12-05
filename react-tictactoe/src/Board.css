@@ -1,0 +1,19 @@
+.status {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.game {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
