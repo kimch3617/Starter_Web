@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgba(4, 59, 59, 0.918);
+  background-color: rgba(24, 12, 66, 0.878);
   color: white;
 }
 
@@ -10,6 +10,12 @@ ol,
 ul {
   margin: 0;
   padding: 0;
+}
+
+.game-board {
+  border: 1px solid black;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .list-item-jump {

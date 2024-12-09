@@ -57,7 +57,7 @@ function App() {
       return;
     }
 
-    const newSquares = currentSquares.slice();
+    const newSquares = currentSquares.map();
 
     if (xIsNext) {
       newSquares[i] = 'X';
