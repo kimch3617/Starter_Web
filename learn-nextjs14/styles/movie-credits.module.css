@@ -1,0 +1,41 @@
+.container {
+  display: inline-block;
+}
+
+.container h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: li;
+}
+
+.credits {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.credit {
+  min-width: 120px;
+  background-color: rgb(240, 243, 246);
+  border-radius: 10px;
+}
+
+.credit img {
+  width: 120px;
+  border-radius: 10px 10px 0 0;
+}
+
+.credit h4 {
+  padding: 5px;
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+}
+
+.credit h5 {
+  padding: 0 5px 5px 5px;
+  color: rgb(145, 138, 138);
+}
