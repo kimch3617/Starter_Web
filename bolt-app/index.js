@@ -25,6 +25,9 @@ app.action("action_deny", async ({ ack }) => {
 });
 
 (async () => {
+  console.log("start!!!");
+  console.log(process.env.SLACK_APP_TOKEN);
+  
   await app.start(process.env.PORT || 3000);
 
   app.logger.info("⚡️ Bolt app is running!");
