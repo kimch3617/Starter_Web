@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About us"
+  title: "About us",
 };
 
 const AboutUs = () => {

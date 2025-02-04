@@ -2,6 +2,7 @@ import styles from "../styles/movie-info.module.css";
 import sleep from "../app/utils/sleep";
 import MovieCredits from "./movie-credits";
 import MovieProviders from "./movie-providers";
+import Link from "next/link";
 
 export async function getMovie(id: string) {
   // await sleep(2000);
@@ -14,16 +15,20 @@ const MovieInfo = async ({ id }: { id: string }) => {
 
   return (
     <div className={styles.container}>
-      <img
-        className={styles.poster}
-        src={movie.poster_path}
-        alt={movie.title}
-      />
+      <Link href={`/photo?path=${movie.poster_path}&title=${movie.title}`}>
+        <img
+          className={styles.poster}
+          src={movie.poster_path}
+          alt={movie.title}
+        />
+      </Link>
       <div className={styles.info}>
         <h1 className={styles.title}>{movie.title}</h1>
         <h3>⭐️ {movie.vote_average.toFixed(1)}</h3>
         <p>{movie.overview}</p>
-        <a href={movie.homepage} target="_blank">Homepage &rarr;</a>
+        <a href={movie.homepage} target="_blank">
+          Homepage &rarr;
+        </a>
         <MovieCredits id={id} />
       </div>
     </div>
